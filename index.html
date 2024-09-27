@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="components/images/01.jpg" alt="Foto de Perfil" class="profile-pic">
+        </div>
+        <div class="text-container">
+            <h1>Seu nome</h1>
+            <p>Seu slogan</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="specialties">
+            <div class="specialty"><a href="https://www.youtube.com/" target="_blank">Youtube <i class="fab fa-youtube"></i></div></a>
+            <div class="specialty"><a href="https://www.youtube.com/" target="_blank">Instagram <i class="fab fa-instagram"></i></div></a>
+            <div class="specialty"><a href="https://www.youtube.com/" target="_blank">Informações <i class="fas fa-info-circle"></i></div></a>   
+            <div class="specialty"><a href="https://wa.me/1234567890" target="_blank">Entre em Contato <i class="fab fa-whatsapp"></i></div></a>   
+        </section> 
+        
+   
+    </main>
+ 
+   
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Seleciona o elemento que será observado
+      const target = document.querySelector('.specialty');
+  
+      // Cria o observer com uma função callback
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          // Verifica se o elemento está visível
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate'); // Adiciona a classe de animação
+            observer.unobserve(entry.target); // Para de observar após a animação ser ativada
+          }
+        });
+      });
+  
+      // Inicia a observação do elemento
+      observer.observe(target);
+    });
+  </script>
+
+</html>

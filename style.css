@@ -1,0 +1,106 @@
+
+        /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    line-height: 1.6;
+    background: linear-gradient(10deg, #8b8b8b, #7c7c7c);
+    background-size: 100% 100%;
+    animation: gradientBG 5s ease infinite;
+    color: #333;
+}
+
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(169, 169, 169 ,0.8);
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container {
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+.text-container h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #f8f8f8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Especialidades */
+.specialties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 400px;
+}
+
+.specialty {
+    background: rgba(169, 169, 169 ,0.8);
+    color: #050505;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    
+
+}
+
+.specialty a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.specialty:hover {
+    background: #969696;
+    transform: translateY(-5px);
+    
+}
+
+
+
+
+
+
+
